@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 const styleGreets = {
-  backgroundColor: 'white',
-  fontSize: 12,
+  fontSize: 25,
   borderStyle: "solid" ,
   width: 700,
-  padding:10,
-  textAlign:"left"
+  textAlign:"left",
+  margin:10,
+  color:"grey"
   
 };
 
@@ -15,10 +15,10 @@ function Greetings(props) {
   return (
     <div style={styleGreets}>
       <p className="greets">
-        {lang === 'de' ? <h3>Hallo {children}</h3> : null}
-        {lang === 'en' ? <h3>Hello {children}</h3> : null}
-        {lang === 'es' ? <h3>Hola {children}</h3> : null}
-        {lang === 'fr' ? <h3>Bonjour {children}</h3> : null}
+        {lang === 'de' ? <p>Hallo {children}</p> : null}
+        {lang === 'en' ? <p>Hello {children}</p> : null}
+        {lang === 'es' ? <p>Hola {children}</p> : null}
+        {lang === 'fr' ? <p>Bonjour {children}</p> : null}
       </p>
     </div>
   );

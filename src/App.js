@@ -7,6 +7,9 @@ import BoxColor from "./components/BoxColor"
 import CreditCard from "./components/CreditCard"
 import Rating from "./components/Rating"
 import DriverCard from "./components/DriverCard"
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -26,7 +29,7 @@ function App() {
         gender="female"
         height={168}
         birth={new Date ("1982-11-09")}
-        picture="https://lh3.googleusercontent.com/proxy/kOvShAk4o8WNY-5fOrLz8MYebs4tC7-VEztlES0aCdFk7a34XkvSYp-d4R8tDE8-8A43b8K594hdso-6eVvj5yVXiEaojmqdLa6eXP3sN8sZD1jNVI1KJ5fYXKJkkg" width="100px"
+        picture="https://lh3.googleusercontent.com/proxy/dhpRZZZ-xBLyVSWAIg6JX2N6gSLMjgcS1WcLcN_Xuc0_TduOF9c0I9j_p1JJ413tgXWkEflU6Eo2oPIPd_gVLvDpjtU7BIyC3lragW6mk-OcAJ_u3vu-NnLsD686cA"
     />
     <IdCard
         firstName="Jim"
@@ -95,8 +98,8 @@ function App() {
           expirationYear={25}
           bank="Deutsche Bank"
           owner = "Pimpollo García"
-          bgcolor ="#20B2AA"
-          color ="white"
+          
+         
       />
 
       <CreditCard
@@ -106,8 +109,8 @@ function App() {
           expirationYear={26}
           bank="La Caixa"
           owner = "Andrés Calamaro"
-          bgcolor ="#2271b3"
-          color ="white"
+         
+          
       />
 
     <CreditCard
@@ -117,9 +120,19 @@ function App() {
           expirationYear={23}
           bank="Santander"
           owner = "Joe Black"
-          bgcolor ="#BEBEBE"
-          color ="black"
+         
+          
       />
+
+      <LikeButton />
+
+      <ClickablePicture 
+         img =  "/img/persons/maxence.png"
+         imgClicked = "/img/persons/maxence-glasses.png"
+      />
+
+      
+
     </div>
 
   );
